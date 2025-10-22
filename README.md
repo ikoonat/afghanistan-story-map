@@ -1,5 +1,7 @@
 # Afghanistan Story Map
-## [Link to the Map](https://ikoonat.github.io/afghanistan-map/) (Deployed on Github)
+
+## [Link to the Map](https://ikoonat.github.io/afghanistan-story-map/) (Deployed on Github)
+
 An interactive map application built with React, Leaflet, and Vite showcasing Afghanistan's geography and regions.
 
 ## Credits & Data Sources
@@ -14,4 +16,4 @@ This project uses data and resources from:
 - [x] Add capitals and location data
 - [ ] Add always-on province titles (toggle-able)
 - [ ] Create region shapefile polygons, add to repository
-- [x] Deploy on GitHub Pages with Vite!
+- [ ] Deploy on GitHub Pages with Vite!

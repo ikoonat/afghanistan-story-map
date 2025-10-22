@@ -1,16 +1,106 @@
+/* === Global Styles === */
+:root {
+    --dark-color: #5f356a;
+    /* main dark background */
+    --dark-highlight: #b07a8b;
+    /* hovered sidebar or highlight */
+    --dark-font: #e6b18b;
+    /* text on dark background */
+    --color-accent: #eaa18a;
+    /* button accent / active state */
+    --medium-color: #b86b8a;
+    /* medium background / secondary */
+    --light-color: #f7d9a1;
+    /* light background / hover */
+}
+
 html,
 body,
 #root {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-color: var(--dark-color);
+    color: var(--dark-font);
 }
 
+/* === Map Wrapper === */
+.map-wrapper {
+    flex: 1;
+    height: 100%;
+    margin-left: 180px;
+    /* sidebar width */
+    position: relative;
+}
+
+/* Leaflet map container must fill its parent */
 .leaflet-container {
     width: 100%;
     height: 100%;
 }
 
+/* === Sidebar === */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    padding: 16px;
+    background-color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    /* ensure sidebar above map */
+}
+
+.sidebar h1 {
+    text-align: center;
+    color: var(--dark-font);
+    margin-bottom: 16px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.buttons button {
+    width: 80%;
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--medium-color);
+    color: var(--dark-font);
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.buttons button:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    transform: scale(1.03);
+}
+
+.buttons button.active {
+    background-color: var(--color-accent);
+    color: var(--dark-font);
+}
+
+/* Footer in sidebar */
+.footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--dark-font);
+}
+
+/* Ensure pointer cursor globally for buttons */
 button {
     cursor: pointer;
 }

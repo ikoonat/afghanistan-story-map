@@ -29,7 +29,8 @@ export default function Sidebar({ activeLayers, setActiveLayer }) {
             </div>
             <div className="footer">
                 <img
-                    src="https://raw.githubusercontent.com/ikoonat/afghanistan-map/main/src/assets/afghanmedallion.png"
+                    src="/afghanmedallion.png"
+                    // src="https://raw.githubusercontent.com/ikoonat/afghanistan-map/main/src/assets/afghanmedallion.png"
                     alt="Afghan Medallion"
                     width="120"
                     height="100"

@@ -1,20 +1,31 @@
+/* ================= Sidebar ================= */
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
     width: 180px;
+    /* sidebar width */
     height: 100%;
     padding: 16px;
-    background-color: #423a50;
+    background-color: #5f356a;
+    /* dark colourful */
     display: flex;
     flex-direction: column;
+    z-index: 1000;
+    /* ensure it appears above Leaflet map */
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Header */
 .sidebar h1 {
     text-align: center;
-    color: #fff;
+    color: #e6b18b;
+    /* dark font */
+    margin-bottom: 16px;
+    font-size: 1.2rem;
 }
 
+/* ================= Buttons ================= */
 .buttons {
     display: flex;
     flex-direction: column;
@@ -29,26 +40,34 @@
     padding: 10px 0;
     border: none;
     border-radius: 6px;
-    background-color: #8a3757;
-    color: #fff;
+    background-color: #eaa18a;
+    /* accent color */
+    color: #5f356a;
+    /* sidebar dark colour for contrast */
     cursor: pointer;
+    font-weight: 500;
     transition: background-color 0.2s, transform 0.1s;
 }
 
 .buttons button:hover {
-    background-color: #ffefc7;
-    color: #000;
+    background-color: #f7d9a1;
+    /* lighter highlight */
+    color: #5f356a;
     transform: scale(1.03);
 }
 
 .buttons button.active {
-    background-color: #ed347b;
-    color: white;
+    background-color: #b07a8b;
+    /* dark highlight */
+    color: #e6b18b;
+    /* dark font */
 }
 
+/* ================= Footer ================= */
 .footer {
     margin-top: auto;
     text-align: center;
     font-size: 0.8rem;
-    color: #ccc;
+    color: #f7d9a1;
+    /* light footer font */
 }
