@@ -1,6 +1,6 @@
 {
   "name": "afghanistan-story-map",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://ikoonat.github.io/afghanistan-story-map",
