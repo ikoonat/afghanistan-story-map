@@ -15,5 +15,5 @@ This project uses data and resources from:
 
 - [x] Add capitals and location data
 - [ ] Add always-on province titles (toggle-able)
-- [ ] Create region shapefile polygons, add to repository
-- [ ] Deploy on GitHub Pages with Vite!
+- [x] Create region shapefile polygons, add to repository
+- [x] Deploy on GitHub Pages with Vite!
